@@ -1,8 +1,7 @@
 import "package:flutter/material.dart";
 
 void main() {
-  runApp(MaterialApp(
-      debugShowCheckedModeBanner: false, title: "Calculator", home: Task()));
+  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: Task()));
 }
 
 class Task extends StatefulWidget {
@@ -48,38 +47,38 @@ class Task1 extends State<Task> {
               child: Column(
                 children: [
                   Row(children: [
-                    Container(
-                      width: 20,
-                    ),
+                    Container(width: MediaQuery.of(context).size.width * 0.03),
                     Align(
                         alignment: Alignment(0, 0),
                         child: Text(
                           "Hi,Sarvesh",
                           style: TextStyle(fontSize: 40.00),
                         )),
-                    Container(width: 80),
+                    Container(width: MediaQuery.of(context).size.width * 0.17),
                     Container(
                       color: Colors.transparent,
-                      width: 100,
-                      height: 80,
+                      width: MediaQuery.of(context).size.width * 0.27,
+                      height: MediaQuery.of(context).size.height * 0.1,
                       child: LogoImage(),
                     ),
                   ]),
                   Container(
-                    height: 10,
+                    height: MediaQuery.of(context).size.height * 0.01,
                   ),
                   Container(
                     padding: EdgeInsets.all(20.00),
-                    width: 380,
-                    height: 640,
+                    width: MediaQuery.of(context).size.width * 0.92,
+                    height: MediaQuery.of(context).size.height * 0.75,
                     decoration: BoxDecoration(
                         color: Colors.cyan[100],
                         borderRadius: BorderRadius.all(Radius.circular(50))),
                     child: Column(
                       children: [
-                        Container(height: 20),
+                        Container(
+                            height: MediaQuery.of(context).size.height * 0.01),
                         Row(children: [
-                          Container(width: 5),
+                          Container(
+                              width: MediaQuery.of(context).size.width * 0.01),
                           Align(
                               alignment: Alignment(0, 0),
                               child: Text(
@@ -87,7 +86,8 @@ class Task1 extends State<Task> {
                                 style: TextStyle(
                                     color: Colors.white, fontSize: 20.00),
                               )),
-                          Container(width: 100),
+                          Container(
+                              width: MediaQuery.of(context).size.width * 0.25),
                           Icon(Icons.more_horiz)
                         ]),
                         Align(
@@ -98,15 +98,17 @@ class Task1 extends State<Task> {
                                   color: Colors.white, fontSize: 20.00),
                             )),
                         Container(
-                          height: 10,
+                          height: MediaQuery.of(context).size.height * 0.02,
                         ),
                         Row(
                           children: [
                             Container(
                                 padding: EdgeInsets.all(20.00),
                                 margin: EdgeInsets.only(left: 1),
-                                width: 162.5,
-                                height: 250,
+                                width:
+                                    MediaQuery.of(context).size.width * 0.398,
+                                height:
+                                    MediaQuery.of(context).size.height * 0.29,
                                 decoration: BoxDecoration(
                                     color: _color1,
                                     borderRadius:
@@ -145,13 +147,15 @@ class Task1 extends State<Task> {
                                   )
                                 ])),
                             Container(
-                              width: 10,
+                              width: MediaQuery.of(context).size.width * 0.02,
                             ),
                             Container(
                                 padding: EdgeInsets.all(20.00),
                                 margin: EdgeInsets.only(left: 1),
-                                width: 162.5,
-                                height: 250,
+                                width:
+                                    MediaQuery.of(context).size.width * 0.398,
+                                height:
+                                    MediaQuery.of(context).size.height * 0.29,
                                 decoration: BoxDecoration(
                                     color: _color2,
                                     borderRadius:
@@ -191,15 +195,17 @@ class Task1 extends State<Task> {
                           ],
                         ),
                         Container(
-                          height: 10,
+                          height: MediaQuery.of(context).size.height * 0.01,
                         ),
                         Row(
                           children: [
                             Container(
                                 padding: EdgeInsets.all(20.00),
                                 margin: EdgeInsets.only(left: 1),
-                                width: 162.5,
-                                height: 250,
+                                width:
+                                    MediaQuery.of(context).size.width * 0.398,
+                                height:
+                                    MediaQuery.of(context).size.height * 0.29,
                                 decoration: BoxDecoration(
                                     color: _color3,
                                     borderRadius:
@@ -237,13 +243,15 @@ class Task1 extends State<Task> {
                                   )
                                 ])),
                             Container(
-                              width: 10,
+                              width: MediaQuery.of(context).size.width * 0.02,
                             ),
                             Container(
                                 padding: EdgeInsets.all(20.00),
                                 margin: EdgeInsets.only(left: 1),
-                                width: 162.5,
-                                height: 250,
+                                width:
+                                    MediaQuery.of(context).size.width * 0.398,
+                                height:
+                                    MediaQuery.of(context).size.height * 0.29,
                                 decoration: BoxDecoration(
                                     color: _color4,
                                     borderRadius:
