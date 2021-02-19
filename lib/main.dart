@@ -47,14 +47,17 @@ class Task1 extends State<Task> {
               child: Column(
                 children: [
                   Row(children: [
-                    Container(width: MediaQuery.of(context).size.width * 0.03),
+                    Container(width: MediaQuery.of(context).size.width * 0.04),
                     Align(
                         alignment: Alignment(0, 0),
                         child: Text(
-                          "Hi,Sarvesh",
-                          style: TextStyle(fontSize: 40.00),
+                          "Hi, Sarvesh",
+                          style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontWeight: FontWeight.w400,
+                              fontSize: 40.00),
                         )),
-                    Container(width: MediaQuery.of(context).size.width * 0.17),
+                    Container(width: MediaQuery.of(context).size.width * 0.08),
                     Container(
                       color: Colors.transparent,
                       width: MediaQuery.of(context).size.width * 0.27,
@@ -84,10 +87,13 @@ class Task1 extends State<Task> {
                               child: Text(
                                 "A total of 4 devices",
                                 style: TextStyle(
-                                    color: Colors.white, fontSize: 20.00),
+                                    color: Colors.white,
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 22.00),
                               )),
                           Container(
-                              width: MediaQuery.of(context).size.width * 0.25),
+                              width: MediaQuery.of(context).size.width * 0.16),
                           Icon(Icons.more_horiz)
                         ]),
                         Align(
@@ -95,7 +101,10 @@ class Task1 extends State<Task> {
                             child: Text(
                               "Living Room",
                               style: TextStyle(
-                                  color: Colors.white, fontSize: 20.00),
+                                  color: Colors.white,
+                                  fontFamily: 'Montserrat',
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 22.00),
                             )),
                         Container(
                           height: MediaQuery.of(context).size.height * 0.02,
@@ -122,12 +131,20 @@ class Task1 extends State<Task> {
                                   Align(
                                     alignment: Alignment(-1, 0),
                                     child: Text("Smart",
-                                        style: TextStyle(color: _color1a)),
+                                        style: TextStyle(
+                                          color: _color1a,
+                                          fontFamily: 'Montserrat',
+                                          fontWeight: FontWeight.w500,
+                                        )),
                                   ),
                                   Align(
                                     alignment: Alignment(-1, 0),
                                     child: Text("Spotlight",
-                                        style: TextStyle(color: _color1a)),
+                                        style: TextStyle(
+                                          color: _color1a,
+                                          fontFamily: 'Montserrat',
+                                          fontWeight: FontWeight.w500,
+                                        )),
                                   ),
                                   Align(
                                     alignment: Alignment(-1.4, 0),
@@ -168,12 +185,20 @@ class Task1 extends State<Task> {
                                   Align(
                                     alignment: Alignment(-1, 0),
                                     child: Text("Smart",
-                                        style: TextStyle(color: _color2a)),
+                                        style: TextStyle(
+                                          color: _color2a,
+                                          fontFamily: 'Montserrat',
+                                          fontWeight: FontWeight.w500,
+                                        )),
                                   ),
                                   Align(
                                     alignment: Alignment(-1, 0),
                                     child: Text("AC",
-                                        style: TextStyle(color: _color2a)),
+                                        style: TextStyle(
+                                          color: _color2a,
+                                          fontFamily: 'Montserrat',
+                                          fontWeight: FontWeight.w500,
+                                        )),
                                   ),
                                   Align(
                                     alignment: Alignment(-1.4, 0),
@@ -218,12 +243,20 @@ class Task1 extends State<Task> {
                                   Align(
                                     alignment: Alignment(-1, 0),
                                     child: Text("Smart",
-                                        style: TextStyle(color: _color3a)),
+                                        style: TextStyle(
+                                          color: _color3a,
+                                          fontFamily: 'Montserrat',
+                                          fontWeight: FontWeight.w500,
+                                        )),
                                   ),
                                   Align(
                                     alignment: Alignment(-1, 0),
                                     child: Text("TV",
-                                        style: TextStyle(color: _color3a)),
+                                        style: TextStyle(
+                                          color: _color3a,
+                                          fontFamily: 'Montserrat',
+                                          fontWeight: FontWeight.w500,
+                                        )),
                                   ),
                                   Align(
                                     alignment: Alignment(-1.4, 0),
@@ -264,12 +297,20 @@ class Task1 extends State<Task> {
                                   Align(
                                     alignment: Alignment(-1, 0),
                                     child: Text("Smart",
-                                        style: TextStyle(color: _color4a)),
+                                        style: TextStyle(
+                                          color: _color4a,
+                                          fontFamily: 'Montserrat',
+                                          fontWeight: FontWeight.w500,
+                                        )),
                                   ),
                                   Align(
                                     alignment: Alignment(-1, 0),
                                     child: Text("Sound",
-                                        style: TextStyle(color: _color4a)),
+                                        style: TextStyle(
+                                          color: _color4a,
+                                          fontFamily: 'Montserrat',
+                                          fontWeight: FontWeight.w400,
+                                        )),
                                   ),
                                   Align(
                                     alignment: Alignment(-1.4, 0),
