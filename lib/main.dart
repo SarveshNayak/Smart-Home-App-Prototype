@@ -1,4 +1,8 @@
 import "package:flutter/material.dart";
+import 'screenSpotlight.dart';
+import 'screenAc.dart';
+import 'screenTv.dart';
+import 'screenSound.dart';
 
 void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false, home: Task()));
@@ -112,7 +116,6 @@ class Task1 extends State<Task> {
                         Row(
                           children: [
                             Container(
-                                padding: EdgeInsets.all(20.00),
                                 margin: EdgeInsets.only(left: 1),
                                 width:
                                     MediaQuery.of(context).size.width * 0.398,
@@ -122,52 +125,76 @@ class Task1 extends State<Task> {
                                     color: _color1,
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(20))),
-                                child: Column(children: [
-                                  Align(
-                                    alignment: Alignment(-1, 0),
-                                    child: Icon(Icons.lightbulb_outline,
-                                        color: _color1a),
-                                  ),
-                                  Align(
-                                    alignment: Alignment(-1, 0),
-                                    child: Text("Smart",
-                                        style: TextStyle(
-                                          color: _color1a,
-                                          fontFamily: 'Montserrat',
-                                          fontWeight: FontWeight.w500,
-                                        )),
-                                  ),
-                                  Align(
-                                    alignment: Alignment(-1, 0),
-                                    child: Text("Spotlight",
-                                        style: TextStyle(
-                                          color: _color1a,
-                                          fontFamily: 'Montserrat',
-                                          fontWeight: FontWeight.w500,
-                                        )),
-                                  ),
-                                  Align(
-                                    alignment: Alignment(-1.4, 0),
-                                    child: Switch(
-                                        value: _value1,
-                                        onChanged: (val1) {
-                                          setState(() {
-                                            _value1 = val1;
-                                            _color1 = _color1 == Colors.white
-                                                ? Colors.red
-                                                : Colors.white;
-                                            _color1a = _color1a == Colors.black
-                                                ? Colors.white
-                                                : Colors.black;
-                                          });
-                                        }),
-                                  )
-                                ])),
+                                child: ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      primary: _color1,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(20.00),
+                                      ),
+                                    ),
+                                    child: Column(children: [
+                                      Container(
+                                        height:
+                                            MediaQuery.of(context).size.height *
+                                                0.025,
+                                      ),
+                                      Align(
+                                        alignment: Alignment(-1, 0),
+                                        child: Icon(Icons.lightbulb_outline,
+                                            color: _color1a),
+                                      ),
+                                      Align(
+                                        alignment: Alignment(-1, 0),
+                                        child: Text("Smart",
+                                            style: TextStyle(
+                                              color: _color1a,
+                                              fontFamily: 'Montserrat',
+                                              fontWeight: FontWeight.w500,
+                                            )),
+                                      ),
+                                      Align(
+                                        alignment: Alignment(-1, 0),
+                                        child: Text("Spotlight",
+                                            style: TextStyle(
+                                              color: _color1a,
+                                              fontFamily: 'Montserrat',
+                                              fontWeight: FontWeight.w500,
+                                            )),
+                                      ),
+                                      Align(
+                                        alignment: Alignment(-1.3, 0),
+                                        child: Switch(
+                                            value: _value1,
+                                            onChanged: (val1) {
+                                              setState(() {
+                                                _value1 = val1;
+                                                _color1 =
+                                                    _color1 == Colors.white
+                                                        ? Colors.red
+                                                        : Colors.white;
+                                                _color1a =
+                                                    _color1a == Colors.black
+                                                        ? Colors.white
+                                                        : Colors.black;
+                                              });
+                                            }),
+                                      )
+                                    ]),
+                                    onPressed: () {
+                                      setState(() {
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  ScreenSpotlight(),
+                                            ));
+                                      });
+                                    })),
                             Container(
                               width: MediaQuery.of(context).size.width * 0.02,
                             ),
                             Container(
-                                padding: EdgeInsets.all(20.00),
                                 margin: EdgeInsets.only(left: 1),
                                 width:
                                     MediaQuery.of(context).size.width * 0.398,
@@ -177,46 +204,71 @@ class Task1 extends State<Task> {
                                     color: _color2,
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(20))),
-                                child: Column(children: [
-                                  Align(
-                                    alignment: Alignment(-1, 0),
-                                    child: Icon(Icons.ac_unit, color: _color2a),
-                                  ),
-                                  Align(
-                                    alignment: Alignment(-1, 0),
-                                    child: Text("Smart",
-                                        style: TextStyle(
-                                          color: _color2a,
-                                          fontFamily: 'Montserrat',
-                                          fontWeight: FontWeight.w500,
-                                        )),
-                                  ),
-                                  Align(
-                                    alignment: Alignment(-1, 0),
-                                    child: Text("AC",
-                                        style: TextStyle(
-                                          color: _color2a,
-                                          fontFamily: 'Montserrat',
-                                          fontWeight: FontWeight.w500,
-                                        )),
-                                  ),
-                                  Align(
-                                    alignment: Alignment(-1.4, 0),
-                                    child: Switch(
-                                        value: _value2,
-                                        onChanged: (val2) {
-                                          setState(() {
-                                            _value2 = val2;
-                                            _color2 = _color2 == Colors.white
-                                                ? Colors.purple[400]
-                                                : Colors.white;
-                                            _color2a = _color2a == Colors.black
-                                                ? Colors.white
-                                                : Colors.black;
-                                          });
-                                        }),
-                                  )
-                                ]))
+                                child: ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      primary: _color2,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(20.00),
+                                      ),
+                                    ),
+                                    child: Column(children: [
+                                      Container(
+                                        height:
+                                            MediaQuery.of(context).size.height *
+                                                0.025,
+                                      ),
+                                      Align(
+                                        alignment: Alignment(-1, 0),
+                                        child: Icon(Icons.ac_unit,
+                                            color: _color2a),
+                                      ),
+                                      Align(
+                                        alignment: Alignment(-1, 0),
+                                        child: Text("Smart",
+                                            style: TextStyle(
+                                              color: _color2a,
+                                              fontFamily: 'Montserrat',
+                                              fontWeight: FontWeight.w500,
+                                            )),
+                                      ),
+                                      Align(
+                                        alignment: Alignment(-1, 0),
+                                        child: Text("AC",
+                                            style: TextStyle(
+                                              color: _color2a,
+                                              fontFamily: 'Montserrat',
+                                              fontWeight: FontWeight.w500,
+                                            )),
+                                      ),
+                                      Align(
+                                        alignment: Alignment(-1.3, 0),
+                                        child: Switch(
+                                            value: _value2,
+                                            onChanged: (val2) {
+                                              setState(() {
+                                                _value2 = val2;
+                                                _color2 =
+                                                    _color2 == Colors.white
+                                                        ? Colors.purple[400]
+                                                        : Colors.white;
+                                                _color2a =
+                                                    _color2a == Colors.black
+                                                        ? Colors.white
+                                                        : Colors.black;
+                                              });
+                                            }),
+                                      )
+                                    ]),
+                                    onPressed: () {
+                                      setState(() {
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) => ScreenAc(),
+                                            ));
+                                      });
+                                    })),
                           ],
                         ),
                         Container(
@@ -225,7 +277,6 @@ class Task1 extends State<Task> {
                         Row(
                           children: [
                             Container(
-                                padding: EdgeInsets.all(20.00),
                                 margin: EdgeInsets.only(left: 1),
                                 width:
                                     MediaQuery.of(context).size.width * 0.398,
@@ -235,51 +286,75 @@ class Task1 extends State<Task> {
                                     color: _color3,
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(20))),
-                                child: Column(children: [
-                                  Align(
-                                    alignment: Alignment(-1, 0),
-                                    child: Icon(Icons.tv, color: _color3a),
-                                  ),
-                                  Align(
-                                    alignment: Alignment(-1, 0),
-                                    child: Text("Smart",
-                                        style: TextStyle(
-                                          color: _color3a,
-                                          fontFamily: 'Montserrat',
-                                          fontWeight: FontWeight.w500,
-                                        )),
-                                  ),
-                                  Align(
-                                    alignment: Alignment(-1, 0),
-                                    child: Text("TV",
-                                        style: TextStyle(
-                                          color: _color3a,
-                                          fontFamily: 'Montserrat',
-                                          fontWeight: FontWeight.w500,
-                                        )),
-                                  ),
-                                  Align(
-                                    alignment: Alignment(-1.4, 0),
-                                    child: Switch(
-                                        value: _value3,
-                                        onChanged: (val3) {
-                                          setState(() {
-                                            _value3 = val3;
-                                            _color3 = _color3 == Colors.white
-                                                ? Colors.red
-                                                : Colors.white;
-                                            _color3a = _color3a == Colors.black
-                                                ? Colors.white
-                                                : Colors.black;
-                                          });
-                                        }),
-                                  )
-                                ])),
+                                child: ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      primary: _color3,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(20.00),
+                                      ),
+                                    ),
+                                    child: Column(children: [
+                                      Container(
+                                        height:
+                                            MediaQuery.of(context).size.height *
+                                                0.025,
+                                      ),
+                                      Align(
+                                        alignment: Alignment(-1, 0),
+                                        child: Icon(Icons.tv_rounded,
+                                            color: _color3a),
+                                      ),
+                                      Align(
+                                        alignment: Alignment(-1, 0),
+                                        child: Text("Smart",
+                                            style: TextStyle(
+                                              color: _color3a,
+                                              fontFamily: 'Montserrat',
+                                              fontWeight: FontWeight.w500,
+                                            )),
+                                      ),
+                                      Align(
+                                        alignment: Alignment(-1, 0),
+                                        child: Text("TV",
+                                            style: TextStyle(
+                                              color: _color3a,
+                                              fontFamily: 'Montserrat',
+                                              fontWeight: FontWeight.w500,
+                                            )),
+                                      ),
+                                      Align(
+                                        alignment: Alignment(-1.3, 0),
+                                        child: Switch(
+                                            value: _value3,
+                                            onChanged: (val3) {
+                                              setState(() {
+                                                _value3 = val3;
+                                                _color3 =
+                                                    _color3 == Colors.white
+                                                        ? Colors.purple[400]
+                                                        : Colors.white;
+                                                _color3a =
+                                                    _color3a == Colors.black
+                                                        ? Colors.white
+                                                        : Colors.black;
+                                              });
+                                            }),
+                                      )
+                                    ]),
+                                    onPressed: () {
+                                      setState(() {
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) => ScreenTv(),
+                                            ));
+                                      });
+                                    })),
                             Container(
                               width: MediaQuery.of(context).size.width * 0.02,
                             ),
                             Container(
-                                padding: EdgeInsets.all(20.00),
                                 margin: EdgeInsets.only(left: 1),
                                 width:
                                     MediaQuery.of(context).size.width * 0.398,
@@ -289,46 +364,72 @@ class Task1 extends State<Task> {
                                     color: _color4,
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(20))),
-                                child: Column(children: [
-                                  Align(
-                                    alignment: Alignment(-1, 0),
-                                    child: Icon(Icons.speaker, color: _color4a),
-                                  ),
-                                  Align(
-                                    alignment: Alignment(-1, 0),
-                                    child: Text("Smart",
-                                        style: TextStyle(
-                                          color: _color4a,
-                                          fontFamily: 'Montserrat',
-                                          fontWeight: FontWeight.w500,
-                                        )),
-                                  ),
-                                  Align(
-                                    alignment: Alignment(-1, 0),
-                                    child: Text("Sound",
-                                        style: TextStyle(
-                                          color: _color4a,
-                                          fontFamily: 'Montserrat',
-                                          fontWeight: FontWeight.w400,
-                                        )),
-                                  ),
-                                  Align(
-                                    alignment: Alignment(-1.4, 0),
-                                    child: Switch(
-                                        value: _value4,
-                                        onChanged: (val4) {
-                                          setState(() {
-                                            _value4 = val4;
-                                            _color4 = _color4 == Colors.white
-                                                ? Colors.purple[400]
-                                                : Colors.white;
-                                            _color4a = _color4a == Colors.black
-                                                ? Colors.white
-                                                : Colors.black;
-                                          });
-                                        }),
-                                  )
-                                ]))
+                                child: ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      primary: _color4,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(20.00),
+                                      ),
+                                    ),
+                                    child: Column(children: [
+                                      Container(
+                                        height:
+                                            MediaQuery.of(context).size.height *
+                                                0.025,
+                                      ),
+                                      Align(
+                                        alignment: Alignment(-1, 0),
+                                        child: Icon(Icons.speaker,
+                                            color: _color4a),
+                                      ),
+                                      Align(
+                                        alignment: Alignment(-1, 0),
+                                        child: Text("Smart",
+                                            style: TextStyle(
+                                              color: _color4a,
+                                              fontFamily: 'Montserrat',
+                                              fontWeight: FontWeight.w500,
+                                            )),
+                                      ),
+                                      Align(
+                                        alignment: Alignment(-1, 0),
+                                        child: Text("Sound",
+                                            style: TextStyle(
+                                              color: _color4a,
+                                              fontFamily: 'Montserrat',
+                                              fontWeight: FontWeight.w500,
+                                            )),
+                                      ),
+                                      Align(
+                                        alignment: Alignment(-1.3, 0),
+                                        child: Switch(
+                                            value: _value4,
+                                            onChanged: (val4) {
+                                              setState(() {
+                                                _value4 = val4;
+                                                _color4 =
+                                                    _color4 == Colors.white
+                                                        ? Colors.red
+                                                        : Colors.white;
+                                                _color4a =
+                                                    _color4a == Colors.black
+                                                        ? Colors.white
+                                                        : Colors.black;
+                                              });
+                                            }),
+                                      )
+                                    ]),
+                                    onPressed: () {
+                                      setState(() {
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) =>
+                                                  ScreenSound(),
+                                            ));
+                                      });
+                                    })),
                           ],
                         ),
                       ],
