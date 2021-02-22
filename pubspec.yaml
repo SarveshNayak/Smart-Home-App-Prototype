@@ -66,10 +66,6 @@ flutter:
     #    - asset: fonts/Schyler-Regular.ttf
     #    - asset: fonts/Schyler-Italic.ttf
     #      style: italic
-    - family: YuseiMagic
-      fonts:
-        - asset: fonts/YuseiMagic-Regular.ttf
-          weight: 700
     - family: Montserrat
       fonts:
         - asset: fonts/Montserrat-Medium.ttf
