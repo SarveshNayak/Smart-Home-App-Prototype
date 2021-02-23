@@ -344,11 +344,14 @@ class Task1 extends State<Task> {
                                     ]),
                                     onPressed: () {
                                       setState(() {
-                                        Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                              builder: (context) => ScreenTv(),
-                                            ));
+                                        if (_color3 == Colors.purple[400]) {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    ScreenTv(),
+                                              ));
+                                        }
                                       });
                                     })),
                             Container(
