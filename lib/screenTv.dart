@@ -54,7 +54,18 @@ class ScreenTva extends State<ScreenTv> {
                       onPressed: () {},
                     )),
                 Container(
-                  width: MediaQuery.of(context).size.width * 0.45,
+                  width: MediaQuery.of(context).size.width * 0.2,
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.05,
+                  height: MediaQuery.of(context).size.height * 0.07,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Color(0xff111010),
+                  ),
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.2,
                 ),
                 Container(
                     width: MediaQuery.of(context).size.width * 0.2,
@@ -88,13 +99,12 @@ class ScreenTva extends State<ScreenTv> {
                       width: MediaQuery.of(context).size.width * 0.15,
                       height: MediaQuery.of(context).size.height * 0.08,
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(Radius.circular(40))),
+                        shape: BoxShape.circle,
+                      ),
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           primary: Colors.grey[700],
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(40.00),
-                          ),
+                          shape: CircleBorder(),
                         ),
                         child: Icon(
                           Icons.mic,
@@ -105,6 +115,181 @@ class ScreenTva extends State<ScreenTv> {
                       )),
                 ],
               ),
+              Container(
+                height: MediaQuery.of(context).size.height * 0.05,
+              ),
+              Row(children: [
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.25,
+                ),
+                Container(
+                  width: 200,
+                  height: 200,
+                  child: Stack(
+                    children: [
+                      Container(
+                        width: 200,
+                        height: 200,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.grey[700],
+                        ),
+                      ),
+                      Positioned.fill(
+                        child: Align(
+                          alignment: Alignment.center,
+                          child: Container(
+                            width: 140,
+                            height: 140,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.black87,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                )
+              ]),
+              Container(
+                height: MediaQuery.of(context).size.height * 0.03,
+              ),
+              Row(children: [
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.07,
+                ),
+                Container(
+                    width: MediaQuery.of(context).size.width * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.08,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                    ),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.grey[700],
+                        shape: CircleBorder(),
+                      ),
+                      child: Icon(
+                        Icons.arrow_back_rounded,
+                        color: Colors.white,
+                        size: 30,
+                      ),
+                      onPressed: () {},
+                    )),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.2,
+                ),
+                Container(
+                    width: MediaQuery.of(context).size.width * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.08,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                    ),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.grey[700],
+                        shape: CircleBorder(),
+                      ),
+                      child: Icon(
+                        Icons.home_filled,
+                        size: 30,
+                      ),
+                      onPressed: () {},
+                    )),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.18,
+                ),
+                Container(
+                    width: MediaQuery.of(context).size.width * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.08,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                    ),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.grey[700],
+                        shape: CircleBorder(),
+                      ),
+                      child: Icon(
+                        Icons.menu,
+                        color: Colors.white,
+                        size: 30,
+                      ),
+                      onPressed: () {},
+                    )),
+              ]),
+              Container(
+                height: MediaQuery.of(context).size.height * 0.03,
+              ),
+              Row(children: [
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.07,
+                ),
+                Container(
+                    width: MediaQuery.of(context).size.width * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.08,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                    ),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.grey[700],
+                        shape: CircleBorder(),
+                      ),
+                      child: Icon(
+                        Icons.fast_rewind_rounded,
+                        color: Colors.white,
+                        size: 30,
+                      ),
+                      onPressed: () {},
+                    )),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.2,
+                ),
+                Container(
+                    width: MediaQuery.of(context).size.width * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.08,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                    ),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.grey[700],
+                        shape: CircleBorder(),
+                      ),
+                      child: Container(
+                          height: 20,
+                          width: 30,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                            image: AssetImage('images/play-pause.png'),
+                            fit: BoxFit.contain,
+                          ))),
+                      onPressed: () {},
+                    )),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.18,
+                ),
+                Container(
+                    width: MediaQuery.of(context).size.width * 0.15,
+                    height: MediaQuery.of(context).size.height * 0.08,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                    ),
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.grey[700],
+                        shape: CircleBorder(),
+                      ),
+                      child: Icon(
+                        Icons.fast_forward_rounded,
+                        color: Colors.white,
+                        size: 30,
+                      ),
+                      onPressed: () {},
+                    )),
+              ]),
             ])));
   }
 }
