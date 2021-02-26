@@ -183,12 +183,14 @@ class Task1 extends State<Task> {
                                     ]),
                                     onPressed: () {
                                       setState(() {
-                                        Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                              builder: (context) =>
-                                                  ScreenSpotlight(),
-                                            ));
+                                        if (_color1 == Colors.red) {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    ScreenSpotlight(),
+                                              ));
+                                        }
                                       });
                                     })),
                             Container(
@@ -262,11 +264,14 @@ class Task1 extends State<Task> {
                                     ]),
                                     onPressed: () {
                                       setState(() {
-                                        Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                              builder: (context) => ScreenAc(),
-                                            ));
+                                        if (_color2 == Colors.purple[400]) {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    ScreenAc(),
+                                              ));
+                                        }
                                       });
                                     })),
                           ],
@@ -425,12 +430,14 @@ class Task1 extends State<Task> {
                                     ]),
                                     onPressed: () {
                                       setState(() {
-                                        Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                              builder: (context) =>
-                                                  ScreenSound(),
-                                            ));
+                                        if (_color4 == Colors.red) {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    ScreenSound(),
+                                              ));
+                                        }
                                       });
                                     })),
                           ],
