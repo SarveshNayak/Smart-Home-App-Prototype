@@ -27,35 +27,34 @@ class ScreenAca extends State<ScreenAc> {
             width: 500,
             color: Colors.grey[900],
             child: Column(children: [
-              Container(                  
-                  height: MediaQuery.of(context).size.height * 0.05,                  
-                ),
+              Container(
+                height: MediaQuery.of(context).size.height * 0.05,
+              ),
               Row(children: [
                 Container(
                   width: MediaQuery.of(context).size.width * 0.26,
                 ),
                 Container(
-                    width: MediaQuery.of(context).size.width * 0.5,
-                    height: MediaQuery.of(context).size.height * 0.2,
-                    
-                    decoration: BoxDecoration(
-                      color:Colors.grey[700],
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
-                    child: Icon(
-                        Icons.power_settings_new,
-                        color: Colors.white,
-                        size: 30,
-                      ),),
+                  width: MediaQuery.of(context).size.width * 0.5,
+                  height: MediaQuery.of(context).size.height * 0.2,
+                  decoration: BoxDecoration(
+                      color: Colors.grey[700],
+                      borderRadius: BorderRadius.all(Radius.circular(20))),
+                  child: Icon(
+                    Icons.power_settings_new,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                ),
               ]),
               Container(
                 height: MediaQuery.of(context).size.height * 0.05,
               ),
-              Row(
-                children:[
-                  Container(
-                    width: MediaQuery.of(context).size.width * 0.09,
-                  ),
-                  Container(
+              Row(children: [
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.09,
+                ),
+                Container(
                     width: MediaQuery.of(context).size.width * 0.2,
                     height: MediaQuery.of(context).size.height * 0.06,
                     decoration: BoxDecoration(
@@ -69,10 +68,10 @@ class ScreenAca extends State<ScreenAc> {
                       ),
                       onPressed: () {},
                     )),
-                    Container(
-                    width: MediaQuery.of(context).size.width * 0.12,
-                  ),
-                  Container(
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.12,
+                ),
+                Container(
                     width: MediaQuery.of(context).size.width * 0.2,
                     height: MediaQuery.of(context).size.height * 0.06,
                     decoration: BoxDecoration(
@@ -86,10 +85,10 @@ class ScreenAca extends State<ScreenAc> {
                       ),
                       onPressed: () {},
                     )),
-                    Container(
-                    width: MediaQuery.of(context).size.width * 0.12,
-                  ),
-                  Container(
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.12,
+                ),
+                Container(
                     width: MediaQuery.of(context).size.width * 0.2,
                     height: MediaQuery.of(context).size.height * 0.06,
                     decoration: BoxDecoration(
@@ -103,17 +102,15 @@ class ScreenAca extends State<ScreenAc> {
                       ),
                       onPressed: () {},
                     )),
-                ]
-              ),
+              ]),
               Container(
                 height: MediaQuery.of(context).size.height * 0.05,
               ),
-              Row(
-                children:[
-                    Container(
-                    width: MediaQuery.of(context).size.width * 0.415,
-                  ),
-                  Container(
+              Row(children: [
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.415,
+                ),
+                Container(
                     width: MediaQuery.of(context).size.width * 0.2,
                     height: MediaQuery.of(context).size.height * 0.06,
                     decoration: BoxDecoration(
@@ -127,157 +124,282 @@ class ScreenAca extends State<ScreenAc> {
                       ),
                       onPressed: () {},
                     )),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.12,
+                ),
+                Column(
+                  children: [
                     Container(
-                    width: MediaQuery.of(context).size.width * 0.12,
-                  ),
-                  Container(
-                    width: MediaQuery.of(context).size.width * 0.2,
-                    height: MediaQuery.of(context).size.height * 0.06,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.grey[700],
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.00),
-                        ),
-                      ),
-                      onPressed: () {},
-                    )),
-                ]
-              ),
+                        width: MediaQuery.of(context).size.width * 0.2,
+                        height: MediaQuery.of(context).size.height * 0.04,
+                        decoration: BoxDecoration(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(20))),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.grey[700],
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.00),
+                            ),
+                          ),
+                          onPressed: () {},
+                        )),
+                    Container(
+                      height: MediaQuery.of(context).size.height * 0.01,
+                    ),
+                    Text(
+                      "SET",
+                      style: TextStyle(
+                          fontSize: 15.00,
+                          color: Colors.white,
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.w300),
+                    ),
+                  ],
+                ),
+              ]),
               Container(
                 height: MediaQuery.of(context).size.height * 0.05,
               ),
-              Row(
-                children:[
-                  Container(
-                    width: MediaQuery.of(context).size.width * 0.09,
-                  ),
-                  Container(
-                    width: MediaQuery.of(context).size.width * 0.2,
-                    height: MediaQuery.of(context).size.height * 0.06,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.grey[700],
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.00),
-                        ),
-                      ),
-                      onPressed: () {},
-                    )),
+              Row(children: [
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.09,
+                ),
+                Column(
+                  children: [
                     Container(
-                    width: MediaQuery.of(context).size.width * 0.12,
-                  ),
-                  Container(
-                    width: MediaQuery.of(context).size.width * 0.2,
-                    height: MediaQuery.of(context).size.height * 0.06,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.grey[700],
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.00),
-                        ),
-                      ),
-                      onPressed: () {},
-                    )),
+                        width: MediaQuery.of(context).size.width * 0.2,
+                        height: MediaQuery.of(context).size.height * 0.04,
+                        decoration: BoxDecoration(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(20))),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.grey[700],
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.00),
+                            ),
+                          ),
+                          onPressed: () {},
+                        )),
                     Container(
-                    width: MediaQuery.of(context).size.width * 0.12,
-                  ),
-                  Container(
-                    width: MediaQuery.of(context).size.width * 0.2,
-                    height: MediaQuery.of(context).size.height * 0.06,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.grey[700],
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.00),
-                        ),
-                      ),
-                      onPressed: () {},
-                    )),
-                ]
-              ),Container(
+                      height: MediaQuery.of(context).size.height * 0.01,
+                    ),
+                    Text(
+                      "SLEEP",
+                      style: TextStyle(
+                          fontSize: 15.00,
+                          color: Colors.white,
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.w300),
+                    ),
+                  ],
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.125,
+                ),
+                Column(
+                  children: [
+                    Container(
+                        width: MediaQuery.of(context).size.width * 0.2,
+                        height: MediaQuery.of(context).size.height * 0.08,
+                        decoration: BoxDecoration(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(20))),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.grey[700],
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.00),
+                            ),
+                          ),
+                          onPressed: () {},
+                        )),
+                    Container(
+                      height: MediaQuery.of(context).size.height * 0.01,
+                    ),
+                    Text(
+                      "START",
+                      style: TextStyle(
+                          fontSize: 15.00,
+                          color: Colors.white,
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.w300),
+                    ),
+                    Container(
+                      width: 50,
+                      height: 1,
+                      color: Colors.white,
+                    ),
+                    Text(
+                      "STOP",
+                      style: TextStyle(
+                          fontSize: 15.00,
+                          color: Colors.white,
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.w300),
+                    ),
+                  ],
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.12,
+                ),
+                Column(
+                  children: [
+                    Container(
+                        width: MediaQuery.of(context).size.width * 0.2,
+                        height: MediaQuery.of(context).size.height * 0.04,
+                        decoration: BoxDecoration(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(20))),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.grey[700],
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.00),
+                            ),
+                          ),
+                          onPressed: () {},
+                        )),
+                    Container(
+                      height: MediaQuery.of(context).size.height * 0.01,
+                    ),
+                    Text(
+                      "SWING",
+                      style: TextStyle(
+                          fontSize: 15.00,
+                          color: Colors.white,
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.w300),
+                    ),
+                  ],
+                )
+              ]),
+              Container(
                 height: MediaQuery.of(context).size.height * 0.05,
               ),
-              Row(
-                children:[
+              Row(children: [
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.09,
+                ),
+                Column(children: [
                   Container(
-                    width: MediaQuery.of(context).size.width * 0.09,
-                  ),
-                  Container(
-                    width: MediaQuery.of(context).size.width * 0.15,
-                    height: MediaQuery.of(context).size.height * 0.04,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.grey[700],
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.00),
+                      width: MediaQuery.of(context).size.width * 0.15,
+                      height: MediaQuery.of(context).size.height * 0.04,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.grey[700],
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20.00),
+                          ),
                         ),
-                      ),
-                      onPressed: () {},
-                    )),
-                    Container(
-                    width: MediaQuery.of(context).size.width * 0.078,
-                  ),
+                        onPressed: () {},
+                      )),
                   Container(
-                    width: MediaQuery.of(context).size.width * 0.15,
-                    height: MediaQuery.of(context).size.height * 0.04,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.grey[700],
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.00),
-                        ),
-                      ),
-                      onPressed: () {},
-                    )),
-                    Container(
-                    width: MediaQuery.of(context).size.width * 0.078,
+                    height: MediaQuery.of(context).size.height * 0.01,
                   ),
-                  Container(
-                    width: MediaQuery.of(context).size.width * 0.15,
-                    height: MediaQuery.of(context).size.height * 0.04,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.grey[700],
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.00),
-                        ),
-                      ),
-                      onPressed: () {},
-                    )),
-                    Container(
-                    width: MediaQuery.of(context).size.width * 0.078,
+                  Text(
+                    "OFF",
+                    style: TextStyle(
+                        fontSize: 10.00,
+                        color: Colors.white,
+                        fontFamily: 'Montserrat',
+                        fontWeight: FontWeight.w300),
                   ),
+                ]),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.078,
+                ),
+                Column(children: [
                   Container(
-                    width: MediaQuery.of(context).size.width * 0.15,
-                    height: MediaQuery.of(context).size.height * 0.04,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.grey[700],
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.00),
+                      width: MediaQuery.of(context).size.width * 0.15,
+                      height: MediaQuery.of(context).size.height * 0.04,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.grey[700],
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20.00),
+                          ),
                         ),
-                      ),
-                      onPressed: () {},
-                    )),
-                ]
-              ),
+                        onPressed: () {},
+                      )),
+                  Container(
+                    height: MediaQuery.of(context).size.height * 0.01,
+                  ),
+                  Text(
+                    "ON",
+                    style: TextStyle(
+                        fontSize: 10.00,
+                        color: Colors.white,
+                        fontFamily: 'Montserrat',
+                        fontWeight: FontWeight.w300),
+                  ),
+                ]),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.078,
+                ),
+                Column(children: [
+                  Container(
+                      width: MediaQuery.of(context).size.width * 0.15,
+                      height: MediaQuery.of(context).size.height * 0.04,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.grey[700],
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20.00),
+                          ),
+                        ),
+                        onPressed: () {},
+                      )),
+                  Container(
+                    height: MediaQuery.of(context).size.height * 0.01,
+                  ),
+                  Text(
+                    "SET",
+                    style: TextStyle(
+                        fontSize: 10.00,
+                        color: Colors.white,
+                        fontFamily: 'Montserrat',
+                        fontWeight: FontWeight.w300),
+                  ),
+                ]),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.078,
+                ),
+                Column(children: [
+                  Container(
+                      width: MediaQuery.of(context).size.width * 0.15,
+                      height: MediaQuery.of(context).size.height * 0.04,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.grey[700],
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20.00),
+                          ),
+                        ),
+                        onPressed: () {},
+                      )),
+                  Container(
+                    height: MediaQuery.of(context).size.height * 0.01,
+                  ),
+                  Text(
+                    "CANCEL",
+                    style: TextStyle(
+                        fontSize: 10.00,
+                        color: Colors.white,
+                        fontFamily: 'Montserrat',
+                        fontWeight: FontWeight.w300),
+                  ),
+                ])
+              ]),
             ])));
   }
 }
